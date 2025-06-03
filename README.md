@@ -1,76 +1,92 @@
 
-# Flutter Taxi App UI Kit
-Clone this repository. Open the code folder in any IDE you want
-1. Get Google Map API:
-	- Log in to the Google API Manager Console here: https://console.developers.google.com/apis/library
-	- Enable service on https://console.developers.google.com/apis/library?filter=category:maps
-		- Directions API
-		- Distance Matrix API
-		- Maps SDK for Android
-		- Maps SDK for IOS
-	- Click the Library link in the left sidebar
-	- Select the project you created when you created your API Key for WP Google Maps (See the top arrow in the screenshot below)
-	- Click the link to the Google Maps Directions API in the listing under Google Maps APIs. (See bottom arrow in screenshot below.)
-	- Click Enable on the Google Maps Directions API window.
+# 🚖 Ride Taxi Application
 
-	- Click the Credentials link in the left sidebar
-	- Click the Create credentials to get new API KEY
-2. After acquiring Google Map Api, insert  Google Map Api Key to some file:
-	- Androids
-		- android/app/src/main/AndroidManifest.xml
-	- Ios
-		- ios/Runner/AppDelegate.swift
-	- lib/config.dart
-		- ApiKey: your google map api key
-		- language: your language code
-		- region: your region
-> (Read more documents: https://developers.google.com/places/web-service/search)
+## 📝 Project Overview
 
-3. Run get packages
-```flutter packages get```
-4. Connect your phone to a computer, or open a simulator and run
-```flutter clean```
-```flutter run```
-	- For ios, you run more commands:
-```cd ios```
-```pod install```
-```pod update```
-	- And run again project
-# Previews
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_01.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_03.gif)
+The **Ride Taxi Application** is a Flutter-based mobile application designed to streamline the process of booking and managing taxi rides. The app offers a seamless user experience for both riders and drivers, from account registration to trip completion. It aims to replicate core functionalities found in classical ride-hailing apps like Uber and Careem, while optimizing for performance and a smooth UI/UX using the GetX state management library.
 
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_05.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_13.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_15.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_17.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_25.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_37.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_39.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_41.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_49.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_51.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_53.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_61.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_65.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_73.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_75.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_77.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_85.gif)
-![enter image description here](./images/68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_89.gif)
+---
+
+## ✨ Features
+
+### 🔐 Authentication & User Management
+
+* Custom splash screen and intro animation
+* User and driver login/signup with email/password
+* Firebase authentication integration
+* Role-based navigation (rider or driver dashboard)
+
+### 🗺️ Ride Booking
+
+* Google Maps integration for live location tracking
+* Ride now and ride later options
+* Set pickup and drop-off locations
+* Real-time fare calculation based on distance and time
+* Request ride button sends notification to nearby drivers
+
+### 👨‍✈️ Driver Features
+
+* Accept/reject ride requests
+* View rider details and pickup/drop locations
+* Navigation to destination using Google Maps
+* Trip status: start trip, end trip
+* Trip history log
+
+### 🧑‍💼 Rider Features
+
+* Search for nearby drivers
+* View driver info, car model, and estimated arrival time
+* Live ride tracking
+* Cancel ride option
+* Trip history and invoice generation
+
+### 💸 Payments & Ratings
+
+* Cash and wallet-based payment options (placeholder for payment integration)
+* Rider to driver rating after trip completion
+* Feedback form
+
+### 📱 UI/UX Enhancements
+
+* Custom animated buttons and transitions
+* Clean dashboard interfaces for both user roles
+* Notification system for ride updates
+
+---
+
+## 🛠️ Tools and Technologies Used
+
+* **Flutter** – Frontend mobile framework
+* **Dart** – Programming language for Flutter
+* **Firebase Authentication** – User sign-up and login
+* **Firebase Firestore** – Cloud NoSQL database for storing users and trip data
+* **Firebase Realtime Database** – For real-time ride status and locations
+* **Google Maps API** – Location services, maps, and routing
+* **GetX** – State management, routing, and dependency injection
+* **GeoLocator & GeoFire** – Location tracking and driver discovery
+* **Flutter Launcher Icons** – App branding
+* **Video\_player & URL Launcher** – Multimedia support
+
+---
 
 
-# Features
-**
-Flutter Taxi App UI Kit communicates with the Google Maps API Directions Service which receives direction requests and returns an efficient path. The application works on iOS and Android**
-- Draw the shortest path between 2 points on the map
-- Real-time tracking of driver's location (New)
-- Filter and display markers around your current location (New)
-- Select start position and end position directly on the map
-- Calculate distance, cost, time of the route
-- 25+ Screens
-- Clean code easy develop
-- Using Animation Controller
-- Responsive Design to any all device screen
-- Easy to Custom layout
-- Using mvc model, blocs
+## 🖼️ Screenshots (Mockups)
+![68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_89](https://github.com/user-attachments/assets/ff7cb495-ecd2-4e83-9608-131c96e0e0ad)
+![68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_85](https://github.com/user-attachments/assets/25b472af-64b1-4c61-a9f3-ff7ea1d8e1c9)
+![68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_73](https://github.com/user-attachments/assets/00bc8d00-f3ec-45dc-a2d3-89768a39f546)
+![68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_25](https://github.com/user-attachments/assets/3b32c71a-1c2a-4dc0-ba6d-f49b6f44f249)
+![68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_03](https://github.com/user-attachments/assets/194c6beb-0840-4130-bd46-7c2d0b25177c)
+![68747470733a2f2f692e696d6775722e636f6d2f793742554b5a6e2e706e67_01](https://github.com/user-attachments/assets/ceb57d6b-bfca-4e2e-979c-2f3b3587f112)
+
+
+## 🎥 Video Demo
+
+## 📩 Contact
+
+For suggestions, bug reports, or feature requests, feel free to open an issue or contact:
+
+Ubaid ur Rehman
+📧 ubaid.butt5613@gmail.com
+🌐 (https://www.linkedin.com/in/ubaid-ur-rehman-98535029b/)
+
+

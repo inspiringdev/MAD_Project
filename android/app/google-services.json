@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "226279795549",
+    "project_id": "sawaari-d6e13",
+    "storage_bucket": "sawaari-d6e13.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226279795549:android:9b13742502a190edac16b4",
+        "android_client_info": {
+          "package_name": "com.basoft.customer.ba.com_basoft_customer_ba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226279795549-5e79i6m47o0dbs4ng65mdkji30fvel1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.basoft.customer.ba.com_basoft_customer_ba",
+            "certificate_hash": "f11df890625c28696753f7d5a823c5f94f102bb7"
+          }
+        },
+        {
+          "client_id": "226279795549-s42k4q8csui9mobkdc59cokkjf2qmu5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlwpJ4uvYF5ayNW4RO-kng4oQzeVSSkC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226279795549-s42k4q8csui9mobkdc59cokkjf2qmu5t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "226279795549-il0eumj82vf6b27d8gffic506lk02jh7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.basoft.customer.ba.comBasoftCustomerBa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

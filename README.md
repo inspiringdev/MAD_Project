@@ -1,6 +1,10 @@
 
 # 🚖 Ride Taxi Application
 
+## Mockup Design
+![Untitled design](https://github.com/user-attachments/assets/7af737e1-34de-4bcd-ad6a-e1e75def543c)
+
+
 ## 📝 Project Overview
 
 The **Ride Taxi Application** is a Flutter-based mobile application designed to streamline the process of booking and managing taxi rides. The app offers a seamless user experience for both riders and drivers, from account registration to trip completion. It aims to replicate core functionalities found in classical ride-hailing apps like Uber and Careem, while optimizing for performance and a smooth UI/UX using the GetX state management library.
